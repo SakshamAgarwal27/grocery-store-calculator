@@ -1,0 +1,12 @@
+print("Welcome to the grocery store ")
+a = input("Enter the item: "). split()
+print(a)
+b = list(map(int,input("Enter quantity: "). split()))
+print(b)
+c = list(map(int,input("Price per unit: "). split()))
+print(c)
+total = 0
+for i in range(len(a)):
+    total = total + b[i]*c[i]
+print(f'Total cost of {a} is: {total}')
+print("\n Have a nice day,Visit again ")
